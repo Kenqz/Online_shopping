@@ -1,0 +1,28 @@
+.nav {
+  width: 100%;
+}
+
+.nav__ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__li--active {
+  color: #1c1c1c;
+}
+
+.nav__li {
+  cursor: pointer;
+}
+
+.in-footer {
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.in-footer-li {
+  margin-bottom: 20px;
+}

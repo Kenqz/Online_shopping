@@ -1,0 +1,21 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.contact__img {
+  display: block;
+  width: 30%;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: grayscale(20%);
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact__img {
+    display: none;
+  }
+}

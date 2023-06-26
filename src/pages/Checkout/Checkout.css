@@ -1,0 +1,43 @@
+.checkout {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.checkout__headings {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 20px 2px;
+  border-bottom: 1px solid #ccc;
+}
+
+.checkout__remove {
+  text-align: right;
+}
+
+.checkout__message {
+  text-align: center;
+  color: #1c1c1c;
+  padding: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+  .checkout__headings {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .checkout {
+    width: 80%;
+  }
+
+  .checkout__headings {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .checkout {
+    width: 100%;
+  }
+}

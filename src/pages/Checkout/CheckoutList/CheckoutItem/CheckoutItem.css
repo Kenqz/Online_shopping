@@ -1,0 +1,125 @@
+.checkoutItem {
+  padding: 20px 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  border-bottom: 1px solid #ccc;
+}
+
+.checkoutItem__img {
+  width: 120px;
+  height: 150px;
+}
+
+.checkoutItem__description,
+.checkoutItem__quantity,
+.checkoutItem__price,
+.checkoutItem__remove {
+  display: flex;
+  align-items: center;
+}
+
+.checkoutItem__decrement {
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #1c1c1c;
+  border-bottom: 2px solid #1c1c1c;
+  transform: rotate(45deg);
+  margin-right: 10px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.checkoutItem__increment {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #1c1c1c;
+  border-top: 2px solid #1c1c1c;
+  transform: rotate(45deg);
+  margin-left: 10px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.checkoutItem__remove {
+  justify-content: flex-end;
+}
+
+.checkoutItem__removeBtn {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.checkoutItem__removeBtn:hover {
+  cursor: pointer;
+  color: #ff0000;
+}
+
+@media screen and (max-width: 1200px) {
+  .checkoutItem {
+    font-size: 14px;
+  }
+
+  .checkoutItem__img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .checkoutItem__increment,
+  .checkoutItem__decrement {
+    height: 6px;
+    width: 6px;
+    padding: 3px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .checkoutItem__img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .checkoutItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 450px;
+    font-size: 16px;
+    position: relative;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+
+  .checkoutItem__removeBtn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .checkoutItem__description {
+    font-weight: 600;
+  }
+
+  .checkoutItem__img {
+    height: 250px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .checkoutItem {
+    width: 100%;
+    height: 400px;
+  }
+
+  .checkoutItem__removeBtn {
+    right: 10px;
+  }
+
+  .checkoutItem__img {
+    height: 250px;
+    width: 200px;
+  }
+}

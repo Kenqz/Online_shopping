@@ -1,0 +1,98 @@
+.homepage__categoryType {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.homepage__categoryGender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60%;
+  gap: 15px;
+}
+
+.homepage__category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #1c1c1c;
+}
+
+.homepage__hats {
+  width: 33%;
+  height: 280px;
+  background-image: url('https://i.ibb.co/cvpntL1/hats.png');
+}
+
+.homepage__jackets {
+  width: 33%;
+  height: 280px;
+  background-image: url('https://i.ibb.co/px2tCc3/jackets.png');
+}
+
+.homepage__sneakers {
+  width: 33%;
+  height: 280px;
+  background-image: url('https://i.ibb.co/0jqHpnp/sneakers.png');
+}
+
+.homepage__womens {
+  width: 50%;
+  height: 400px;
+  background-image: url('https://i.ibb.co/GCCdy8t/womens.png');
+}
+
+.homepage__mens {
+  width: 50%;
+  height: 400px;
+  background-image: url('https://i.ibb.co/R70vBrQ/men.png');
+}
+
+@media screen and (max-width: 1200px) {
+  .homepage__categoryType {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .homepage__hats,
+  .homepage__jackets {
+    flex: 1;
+  }
+
+  .homepage__sneakers {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homepage__categoryType {
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .homepage__hats,
+  .homepage__jackets,
+  .homepage__sneakers {
+    flex: auto;
+    width: 100%;
+  }
+
+  .homepage__categoryGender {
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .homepage__mens,
+  .homepage__womens {
+    width: 100%;
+    height: 280px;
+  }
+}

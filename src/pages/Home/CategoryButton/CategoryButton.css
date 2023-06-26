@@ -1,0 +1,13 @@
+.categoryBtn {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 32px;
+  background-color: #fff;
+  opacity: 0.7;
+  border: 1px solid #1c1c1c;
+}
+
+.categoryBtn__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}

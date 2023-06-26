@@ -1,0 +1,145 @@
+.contactFormContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 64px 0 64px;
+}
+
+.contactFormContainer__heading {
+  width: 100%;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.contactFormContainer__description {
+  margin-bottom: 80px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.contactForm {
+  width: 100%;
+}
+
+.contactForm__input {
+  width: 70%;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #1c1c1c;
+  margin-bottom: 30px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contactForm__input:focus {
+  border-color: #ccc;
+}
+
+.contactForm__textarea {
+  height: 160px;
+  resize: none;
+  padding: 8px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #1c1c1c;
+  background-color: transparent;
+  width: 70%;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.contactForm__textarea:focus {
+  border-color: #ccc;
+}
+
+.contactForm--invalidInput {
+  border-color: #ff0000;
+}
+
+.errorMsg {
+  position: relative;
+  bottom: 20px;
+  color: #ff0000;
+  font-size: 12px;
+  visibility: hidden;
+}
+
+.errorMsg--show {
+  visibility: visible;
+}
+
+.contactForm__submitBtn {
+  border: none;
+  background-color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 14px 40px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.contactForm__submitBtn:hover,
+.contactForm__submitBtn:active {
+  cursor: pointer;
+  background-color: transparent;
+  color: #1c1c1c;
+}
+
+.contactForm--disabledBtn {
+  border: none;
+  background-color: #ccc;
+  border: 1px solid #a8a8a8;
+  color: #6e6e6e;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  padding: 14px 40px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.contactForm--disabledBtn:hover {
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 1200px) {
+  .contactFormContainer {
+    width: 80%;
+    margin-bottom: 50px;
+    padding: 32px 64px;
+  }
+
+  .contactForm__input,
+  .contactForm__textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactFormContainer {
+    padding: 32px;
+  }
+
+  .contactFormContainer__heading {
+    font-size: 32px;
+  }
+
+  .errorMessage {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contactFormContainer {
+    width: 100%;
+  }
+
+  .contactForm__input,
+  .contactForm__textarea {
+    font-size: 14px;
+  }
+}

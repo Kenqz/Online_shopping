@@ -1,0 +1,113 @@
+.loginForm {
+  width: 70%;
+}
+
+.loginForm__header {
+  margin-bottom: 15px;
+}
+.loginForm__header_mainheading {
+  margin-bottom: 5px;
+}
+
+.loginForm__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.loginForm__input {
+  border-width: 0 0 1px;
+  border-color: #6e6d6d;
+  padding: 15px;
+  outline: 0;
+}
+
+.loginForm__input--invalid {
+  border-width: 0 0 1px;
+  border-color: #f50505;
+  padding: 15px;
+  outline: 0;
+  transition: 1s;
+}
+
+.loginForm__buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.loginForm__googleBtn {
+  background-color: #2d14bd;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.loginForm__loginBtn {
+  border: none;
+  background-color: #1c1c1c;
+  border: 2px solid #1c1c1c;
+  color: #fff;
+  font-size: 17.6px;
+  letter-spacing: 0.5px;
+  padding: 14.4px 40px;
+  transition: 0.3s;
+}
+
+.loginForm__loginBtn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #1c1c1c;
+}
+
+.loginForm--disabledBtn {
+  border: none;
+  background-color: #ccc;
+  border: 2px solid #a8a8a8;
+  color: #6e6e6e;
+  font-size: 17.6px;
+  letter-spacing: 0.5px;
+  padding: 14.4px 40px;
+  transition: 0.3s;
+}
+
+.errorMessage {
+  position: relative;
+  color: #ff0000;
+  font-size: 10px;
+  visibility: visible;
+}
+
+.errorMessage--hidden {
+  position: relative;
+  color: #ff0000;
+  font-size: 15px;
+  visibility: hidden;
+}
+
+.loginForm--disabled:hover {
+  cursor: not-allowed;
+}
+
+.errorMessage__request {
+  color: #ff0000;
+  padding: 10px;
+  transform: 2s;
+}
+
+@media screen and (max-width: 1024px) {
+  .loginForm {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .loginForm__buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+}
